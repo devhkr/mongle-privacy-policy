@@ -167,17 +167,14 @@
 
       <h2>4. 제3자 제공</h2>
       <p>
-        몽글은 어떠한 개인정보도 제3자에게 제공하지 않습니다. 단, 다음
-        서비스들은 앱 기능 제공을 위해 자체적으로 정보를 처리할 수 있습니다:
+        몽글은 사용자가 입력한 대화 내용을 AI 응답 생성 목적으로 DeepSeek API
+        서버로 전송합니다.
       </p>
       <ul>
-        <li>
-          <strong>DeepSeek AI:</strong> AI 응답 생성을 위한 대화 내용 처리
-        </li>
-        <li><strong>Google AdMob:</strong> 광고 제공을 위한 광고 ID 처리</li>
-        <li>
-          <strong>Firebase:</strong> 앱 보안 및 인증을 위한 기기 정보 처리
-        </li>
+        <li>전송 경로: Vercel(프록시 서버) → DeepSeek API 서버</li>
+        <li>수집 항목: 사용자의 채팅 입력 텍스트</li>
+        <li>이용 목적: AI 챗봇 응답 생성</li>
+        <li>보관 기간: 서버에 저장하지 않으며, 요청 처리 이후 즉시 폐기</li>
       </ul>
 
       <h2>5. 이용자의 권리</h2>
